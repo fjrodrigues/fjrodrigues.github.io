@@ -1,3 +1,23 @@
-body {
+	body {
 	background-color: black;
-}
+	}
+
+	.title-glow {
+		font-size: 100px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff/*, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff */;
+	}
+
+	.nav {
+		margin-bottom: 150px;
+	}
+
+	.first-row {
+		margin-top: 150px;
+	}
+
+	.video-row {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
