@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>ANACHRONIC stamp</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/about.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-link ext-nav-link" href="about.html">ABOUT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link ext-nav-link" href="fiction.html">FICTION</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link ext-nav-link" href="process.html">PROCESS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link ext-nav-link" href="#">EXPERIENCE</a>
+			</li>
+		</ul>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="title-glow fontwoodlandul">ANACHRONIC STAMP</h1>
+				</div>
+			</div>
+			<div class="row video-row">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<video playsinline="playsinline" controls="controls" loop="loop" class="embed-responsive-item">
+							<source src="videos/Teaser.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 text-body">
+					<p>
+						In this fiction, the leading character craves for a world where all the darkness in their life no longer exists. 
+						In order to build this world, they decree an expiration date for all their negative memories. 
+						Being able to select their memories, they are their own god, being able to manipulate their reality, living in a nostalgic time, in this unreal world they imagine, where there are no bad experiences and everything is a utopia. 
+						At first, living in this world seems like living for the first time, but later, the leading character falls into a void of emptiness. 
+						Their identity was taken by all the repudiated memories. 
+						They are no longer living. There’s no past, present or future. Just emptiness.
+					</p>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row image-row">
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-10">
+					<img src="images/Timeline_Croped.jpg" class="img-fluid" alt="Responsive image" usemap="#interactiveMap">
+					<map name="interactiveMap">
+						<area shape="rect" coords="22,150,42,170" href="#blank" alt="boom">
+						<area shape="rect" coords="400,150,420,170" href="" onclick="">
+						<area shape="rect" coords="646,150,666,170" href="" onclick="">
+						<area shape="rect" coords="902,150,922,170" href="" onclick="">
+					</map>
+				</div>
+				<div class="col-md-1">
+				</div>
+			</div>
+			<div class="row pair-1 text-center">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 text-body">
+					<p>text pair 1</p>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-1">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					video pair 1
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-2 text-center">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 text-body">
+					<p>text pair 2</p>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-2">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					video pair 2
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-3 text-center">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 text-body">
+					<p>text pair 3</p>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-3">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					video pair 3
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-4 text-center">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6 text-body">
+					<p>text pair 4</p>
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+			<div class="row pair-4">
+				<div class="col-md-3">
+				</div>
+				<div class="col-md-6">
+					video pair 4
+				</div>
+				<div class="col-md-3">
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$('area').on('click', function() {
+				alert($(this).attr('alt') + ' clicked');
+			});
+		</script>
+	</body>

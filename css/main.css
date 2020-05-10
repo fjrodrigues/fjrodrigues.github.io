@@ -85,7 +85,7 @@ font-family: pp_woodlandultralight;
 	font-size: 160px;
 	color: #fff;
 	text-align: center;
-	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffffff, 0 0 20px #ffffff/*, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff */;
+	text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff/*, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff, 0 0 30px #ffffff, 0 0 35px #ffffff */;
 }
 
 .text-body {
@@ -97,4 +97,12 @@ font-family: pp_woodlandultralight;
 	border: 1px solid black;
 	direction: ltr;
   }
+
+.sub-title {
+	font-size: 35px;
+	color:#ffffff;
+	font-family: pp_woodlandultralight;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
 	  
