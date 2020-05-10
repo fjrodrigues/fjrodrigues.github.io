@@ -92,7 +92,7 @@ document.getElementById('next').addEventListener('click', onNextPage);
  */
 pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
   pdfDoc = pdfDoc_;
-  document.getElementById('page_count').textContent = pdfDoc.numPages;
+  //document.getElementById('page_count').textContent = pdfDoc.numPages;
 
   // Initial/first page rendering
   renderPage(pageNum);

@@ -1,11 +1,21 @@
 
+	
 @font-face {
 	font-family: 'pp_woodlandultralight';
-    src: url('ppwoodland_ultralight-webfont.woff2') format('woff2'),
-         url('ppwoodland_ultralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+	src: url('ppwoodland_ultralight-webfont.woff2') format('woff2'),
+			url('ppwoodland_ultralight-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'arimoregular';
+	src: url('arimo-regular-webfont.woff2') format('woff2'),
+			url('arimo-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+
+}
 
 header {
 	position: relative;
@@ -79,7 +89,9 @@ font-family: pp_woodlandultralight;
 }
 
 .text-body {
+	font-size: 20px;
 	color:#fff;
+	font-family: arimoregular;
 }
 #the-canvas {
 	border: 1px solid black;
