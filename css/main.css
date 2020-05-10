@@ -81,4 +81,8 @@ font-family: pp_woodlandultralight;
 .text-body {
 	color:#fff;
 }
+#the-canvas {
+	border: 1px solid black;
+	direction: ltr;
+  }
 	  
