@@ -66,12 +66,12 @@
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10">
-					<img src="images/Timeline_Croped.jpg" class="img-fluid" alt="Responsive image" usemap="#interactiveMap">
+					<img src="images/Timeline_Croped.jpg" class="img-fluid map" alt="Responsive image" usemap="#interactiveMap" width="1157" height="271">
 					<map name="interactiveMap">
 						<area shape="rect" coords="22,150,42,170" href="#blank" alt="boom">
-						<area shape="rect" coords="400,150,420,170" href="" onclick="">
-						<area shape="rect" coords="646,150,666,170" href="" onclick="">
-						<area shape="rect" coords="902,150,922,170" href="" onclick="">
+						<area shape="rect" coords="400,150,420,170" href="#blank" onclick="">
+						<area shape="rect" coords="646,150,666,170" href="#blank" onclick="">
+						<area shape="rect" coords="902,150,922,170" href="#blank" onclick="">
 					</map>
 				</div>
 				<div class="col-md-1">
@@ -152,9 +152,20 @@
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.rwdImageMaps.min.js"></script>
+		<script src="js/jquery.maphilight.min.js"></script>
 		<script>
-			$('area').on('click', function() {
-				alert($(this).attr('alt') + ' clicked');
+			$(document).ready(function(e) {
+				$('img[usemap]').rwdImageMaps();
+				$('.map').maphilight();
 			});
+			$('area').on('click', function() {
+				console.log($(this).attr('alt') + ' clicked');
+			});
+			/*$('area').mouseover(function() {
+				alert($(this).attr('coords'));
+			}).mouseout(function(){
+				alert('Mouseout....');      
+			});*/
 		</script>
 	</body>
