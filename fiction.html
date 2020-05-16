@@ -13,6 +13,7 @@
 
 	</head>
 	<body>
+		<a class="nav-link nav-home float-left" href="index.html"><img src="images/Cruz.svg" width="15px" height="15px"></a>
 		<ul class="nav">
 			<li class="nav-item">
 				<a class="nav-link ext-nav-link" href="about.html">ABOUT</a>
@@ -68,83 +69,151 @@
 				<div class="col-md-10">
 					<img src="images/Timeline_Croped.jpg" class="img-fluid map" alt="Responsive image" usemap="#interactiveMap" width="1157" height="271">
 					<map name="interactiveMap">
-						<area shape="rect" coords="22,150,42,170" href="#blank" alt="boom">
-						<area shape="rect" coords="400,150,420,170" href="#blank" onclick="">
-						<area shape="rect" coords="646,150,666,170" href="#blank" onclick="">
-						<area shape="rect" coords="902,150,922,170" href="#blank" onclick="">
+						<area shape="rect" data-target="pair-1" coords="22,150,42,170" href="#blank" onclick="toggleTimeBlock()">
+						<area shape="rect" data-target="pair-2" coords="400,150,420,170" href="#blank" onclick="toggleTimeBlock()">
+						<area shape="rect" data-target="pair-3" coords="646,150,666,170" href="#blank" onclick="toggleTimeBlock()">
+						<area shape="rect" data-target="pair-4" coords="902,150,922,170" href="#blank" onclick="toggleTimeBlock()">
 					</map>
 				</div>
 				<div class="col-md-1">
 				</div>
 			</div>
-			<div class="row pair-1 text-center">
+			<div class="row timeline-block pair-1 text-center d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 text-body">
-					<p>text pair 1</p>
+					<p>
+						His intimate space, a small one-bedroom apartment, is dark and messy. 
+						Full of knickknacks and other useless things, he didn’t attach meaningless sentimental values to these,
+						collecting them as mere reminders of still being alive, reminders that time is always moving forward.
+					</p>
+					<p>
+						The City, Love, and Despair marks the first of a four-part series of videos delving into the story of Anachronic Stamp.
+						As a starting point, the video explores the origins and the emergence of the feelings that lead the main character through a path of blind destruction. At the core of this act, love or severe infatuation is found as the main reason for the anguish that the character feels, living each and every day consumed by it, failing to gather any kind of reciprocation. Exploring deeper into his mindset, the city and his relation with it, marks a crucial aspect as to understand the atmosphere on which he is enveloped. Feeling lost and isolated in conjunction with a hopeless pursuit for an unrequited love induces in him a deep state of despair and an intense longing for change. Not being able to handle this way of living, and after much consideration, the character defines a date for the erasure of the memories pertaining to his loved-one.
+						As the elements that guide us and connect the video, the mementos or knickknacks that he collects take on two meanings for the character: they not only become elements that ground him, reminders of the time elapsed in the city, but soon enough they also become painful signs of his shortcomings concerning his love. More so, in this narrative, these objects become true symbols of its inception: material objects in a direction of increasing alienation and of complete distortion of reality.
+					</p>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-1">
+			<div class="row timeline-block pair-1 last-row d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6">
-					video pair 1
+					<div class="embed-responsive embed-responsive-16by9">
+						<video id="video_pair-1" playsinline="playsinline" controls="controls" loop="loop" class="embed-responsive-item">
+							<source src="videos/Gabinete1.m4v" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-2 text-center">
+			<div class="row pair-2 timeline-block text-center d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 text-body">
-					<p>text pair 2</p>
+					<p>
+						And he unconsciously begins to magnify this close yet distant past, thus contemplating a feeling of craved unreachable bliss. He now hopelessly resides in a place he no longer belongs to. 
+						Peace of mind is inevitably unachievable; living desolately in the delusion of a vanished past is insufferable. And therefore, the character commits himself to erase all recollections of this utopian place — now unbearably painful to even conceive. 
+						He encloses the images of the unfeasible past by establishing an expiration date: in a month from then, all the memories would be lost eternally and serenity could once again be achieved.
+					</p>
+					<p>
+						Nostalgia, A Dissolving Harbor embodies the second part of a series of videos that seek to spawn individual perspectives on the fiction Anachronic Stamp — an adaptation of Wong Kar-wai’s Chungking Express.
+						Dwelling in the idea of nostalgia and yearning for a vanished place, the entry of the video is set after the erasure of all memories pertaining to the main character’s loved-one. 
+						The inaugural seconds of the video evoke the feeling of displacement and damaging disorientation felt by the character, whose only tie to the city he lives in was the now-erased love. Abruptly dislodged by his surroundings, the character is possessed by a deep feeling of nostalgia regarding a near past.
+						The following part of the video portrays the character’s memories of this place and their magnification. 
+						The fluctuation of the soundscape and the colors sustain an unlike and somewhat unapproachable atmosphere. This is a craved yet unobtainable place and time.
+					</p>
+					<p>
+						Striving for bliss and serenity, the character commits himself to erase all recollections of this place by establishing an expiration date. 
+						Thus, the closure of the video embodies the ultimate moment of obliteration through the etherealness of the soundscape and the rise of the ellipse — a symbol of erasure.
+					</p>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-2">
+			<div class="row timeline-block pair-2 last-row d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6">
-					video pair 2
+					<div class="embed-responsive embed-responsive-16by9">
+						<video id="video_pair-2" playsinline="playsinline" controls="controls" loop="loop" class="embed-responsive-item">
+							<source src="videos/Gabinete2.m4v" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-3 text-center">
+			<div class="row timeline-block pair-3 text-center d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 text-body">
-					<p>text pair 3</p>
+					<p>
+						Loss and Revelation represents this third state of this character’s process of discovering and destroying his identity. 
+						Here it’s shown one of his oldest memories, the day he was near the sea with his mother and got lost in the woods, never finding her again. 
+						More than concrete images, he remembers feelings and I tried to represent them and make the spectator feel the transition between a first strange state of a “calm” confusion when he is at the sea and a second moment of fear and anxiety in the woods. 
+						The music helps creating this nerve-racking rising atmosphere that ends abruptly when the memory expires.
+					</p>
+					<p>
+						Like the earth, memory has layers. 
+						They build themselves on top of each other and some of them, even if buried deep down, constantly emerge to the surface, like lava in a volcano. 
+						Others, however, are fossilized and will only be revealed if we remove the upper layers.
+					</p>
+					<p>
+						Originally written in the second instalment of our Production Manual – where the full story is written – this comparison between memories and the Earth is shown at the beginning and the end of the video. 
+						The first frame shows the place he erases in the second part of the narrative. 
+						The camera descends until it reaches the childhood memories, shown in this video. 
+						After the elimination of these memories, at the end of this video, the camera goes up again, showing the place where he is lastly, the city, where the process began.
+					</p>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-3">
+			<div class="row timeline-block pair-3 last-row d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6">
-					video pair 3
+					<div class="embed-responsive embed-responsive-16by9">
+						<video id="video_pair-3" playsinline="playsinline" controls="controls" loop="loop" class="embed-responsive-item">
+							<source src="videos/Gabinete3.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-4 text-center">
+			<div class="row timeline-block pair-4 text-center d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6 text-body">
-					<p>text pair 4</p>
+					<p>
+						Memory serves us as a landmark of personal experiences that are open to interpretation and reframe the past not as fixed narrative but as a multiplicity of voices from diverse points of view. 
+						This allows us to think about our personal stories, how we might document things to come. 
+						We have all experienced the feeling of being suddenly transported to our past and reviving intense, emotional memories triggered by a whatsoever stimulus. 
+						This phenomenon, usually described by sense memories, tackles an altogether framework of personal accounts. 
+						But, what if, one has already lost the ability to understand, connect and intertwine the frames evoked by such process? 
+						What if, due to a succession of voluntary erasures of memories, one is left only with intermittent breaks of consciousness, often triggered by senses? 
+						The result would probably be a recollection of involuntary strong emotional reactions that intercross each other. 
+						Having lost the ability to bridge the gaps, cognitive functions would be eroded, and the loss of identity would surely settle in. 
+						We would rummage through a heap of trash, a pile of disconnected, fractured reminiscences. 
+						It would be as if life had become an ephemeral concept, which never even existed in a fixed space or time and seemed to disappear entirely when not being performed as we know it. 
+						Inner specters, Outer spectators stands as the last but one part of a five-section fiction entitled Anachronic Stamp.
+					</p>
 				</div>
 				<div class="col-md-3">
 				</div>
 			</div>
-			<div class="row pair-4">
+			<div class="row timeline-block last-row pair-4 last-row d-none">
 				<div class="col-md-3">
 				</div>
 				<div class="col-md-6">
-					video pair 4
+					<div class="embed-responsive embed-responsive-16by9">
+						<video id="video_pair-4" playsinline="playsinline" controls="controls" loop="loop" class="embed-responsive-item">
+							<source src="videos/Gabinete4.mp4" type="video/mp4">
+						</video>
+					</div>
 				</div>
 				<div class="col-md-3">
 				</div>
@@ -167,5 +236,38 @@
 			}).mouseout(function(){
 				alert('Mouseout....');      
 			});*/
+
+			function toggleTimeBlock() {
+				console.log('you called?');
+				const targetClassIdentifier = event.target.dataset.target
+				let timelineBlockElements = document.getElementsByClassName('timeline-block');
+				for(let j=0; j<timelineBlockElements.length; j++) {
+					if(timelineBlockElements[j].classList.contains(targetClassIdentifier))
+					{
+						timelineBlockElements[j].classList.toggle('d-none');
+						if(timelineBlockElements[j].classList.contains('d-none')) {
+							pauseSelfVideo(targetClassIdentifier);
+						}
+					}
+					else if(!timelineBlockElements[j].classList.contains('d-none')) {
+						timelineBlockElements[j].classList.add('d-none');
+						pauseOthers(targetClassIdentifier);
+					}
+				}
+			}
+
+			function pauseSelfVideo( target ) {
+				videoPlayerId = 'video_' + target;
+				document.getElementById(videoPlayerId).pause();
+			}
+
+			function pauseOthers( excludePlayer) {
+				let listOfPlayersIds = ["video_pair-1", "video_pair-2", "video_pair-3", "video_pair-4"];
+				for(element in listOfPlayersIds){
+					if (listOfPlayersIds[element] != excludePlayer){
+						document.getElementById(listOfPlayersIds[element]).pause();
+					}
+				}
+			}
 		</script>
 	</body>

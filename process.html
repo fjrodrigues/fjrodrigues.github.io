@@ -13,6 +13,7 @@
 
 	</head>
 	<body>
+		<a class="nav-link nav-home float-left" href="index.html"><img src="images/Cruz.svg" width="15px" height="15px"></a> 
 		<ul class="nav">
 			<li class="nav-item">
 				<a class="nav-link ext-nav-link" href="about.html">ABOUT</a>
@@ -27,16 +28,16 @@
 				<a class="nav-link ext-nav-link" href="#">EXPERIENCE</a>
 			</li>
 		</ul>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 text-center">
-
-					<div>
-					<button id="prev">Previous</button>
-					<button id="next">Next</button>
-					</div>
-
+		<div class="container-fluid h-100">
+			<div class="row align-items-center h-100">
+				<div class="col-md-2 text-center">
+					<img id="prev" class="pointer-effect float-right" src="images/Seta esq.svg" width="40px" height="40px" >
+				</div>
+				<div class="col-md-8 text-center">
 					<canvas id="the-canvas"></canvas>
+				</div>
+				<div class="col-md-2 text-center">
+					<img id="next" class="pointer-effect float-left" src="images/Seta dta.svg" width="40px" height="40px" >
 				</div>
 			</div>
 			<div class="row last-row">
@@ -46,12 +47,12 @@
 					<p class="sub-title">
 						STRUCTURE
 					</p>
-					<p>
+					<p class="text-body">
 						The Production Manual is divided into four installments.
-						<p>The first one, MONOLOGUE, reveals the character’s vision on his own path of discovering and unconsciously destroying his own identity.</p>
-						<p>The second one, ANALOGUE, explores another interpretation of the same timeline, from an outside view and is divided into four parts that coincide with the four moments of erasure of his memories.</p>
-						<p>The third one, TRAVELOGUE, is focused on the transformation of the fiction into public online experience, in times of a global pandemic.</p>
-						<p>The fourth one, EPILOGUE, concludes the project with our vision on the entire process and the importance of all the questions and answers brought by this fiction.</p>
+						<p>The first one, <span class="pointer-effect fontwoodlandul" data-page="9" onclick="goToPage()">MONOLOGUE</span>, reveals the character’s vision on his own path of discovering and unconsciously destroying his own identity.</p>
+						<p>The second one, <span class="pointer-effect fontwoodlandul" data-page="9" onclick="goToPage()">ANALOGUE</span>, explores another interpretation of the same timeline, from an outside view and is divided into four parts that coincide with the four moments of erasure of his memories.</p>
+						<p>The third one, <span class="pointer-effect fontwoodlandul" data-page="9" onclick="goToPage()">TRAVELOGUE</span>, is focused on the transformation of the fiction into public online experience, in times of a global pandemic.</p>
+						<p>The fourth one, <span class="pointer-effect fontwoodlandul" data-page="9" onclick="goToPage()">EPILOGUE</span>, concludes the project with our vision on the entire process and the importance of all the questions and answers brought by this fiction.</p>
 					</p>
 				</div>
 				<div class="col-md-3">

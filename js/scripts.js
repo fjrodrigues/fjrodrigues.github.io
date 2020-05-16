@@ -13,7 +13,7 @@ var pdfDoc = null,
     pageNum = 1,
     pageRendering = false,
     pageNumPending = null,
-    scale = 0.8,
+    scale = 0.9,
     canvas = document.getElementById('the-canvas'),
     ctx = canvas.getContext('2d');
 
@@ -48,7 +48,7 @@ function renderPage(num) {
   });
 
   // Update page counters
-  document.getElementById('page_num').textContent = num;
+  //document.getElementById('page_num').textContent = num;
 }
 
 /**
@@ -87,13 +87,14 @@ function onNextPage() {
 }
 document.getElementById('next').addEventListener('click', onNextPage);
 
+function goToPage() {
+	const pageNumber = parseInt(event.target.dataset.page);
+	renderPage(pageNumber);
+}
 /**
  * Asynchronously downloads PDF.
  */
 pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
   pdfDoc = pdfDoc_;
-  //document.getElementById('page_count').textContent = pdfDoc.numPages;
-
-  // Initial/first page rendering
   renderPage(pageNum);
 });
