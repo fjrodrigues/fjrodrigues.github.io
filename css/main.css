@@ -62,6 +62,7 @@ header {
 
   .nav-home {
 	margin-left: 15px;
+	padding:0;
   }
   .nav .ul {
 	display: inline-block;
@@ -74,13 +75,12 @@ header {
 		margin-left: 12px;
 		margin-right: 12px;
 	}
-  /*a:link{
-	color:#fff
-	}*/
 .currentLink {
 	color: #86a5a8 !important;
 }
-
+a:link{
+	color:#fff
+	}
   a:visited{
 	  color:#fff
   }
@@ -176,4 +176,8 @@ font-family: pp_woodlandultralight;
 		color: #ffffff;
 		font-family: pp_woodlandultralight;
 		margin-bottom: 70px;
+	}
+
+	.extra-padding {
+		padding-right: 15px;
 	}
