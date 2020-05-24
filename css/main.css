@@ -58,7 +58,6 @@ header {
 	justify-content: center;
 	font-family: pp_woodlandultralight;
 	margin-top: 25px;
-	margin-left: 15px;
 	}
 
   .nav-home {
@@ -162,6 +161,7 @@ font-family: pp_woodlandultralight;
 
 	.nav-marg-b {
 		margin-bottom: 150px;
+		margin-left: 15px;
 	}
 
 	.video-section {
@@ -178,8 +178,4 @@ font-family: pp_woodlandultralight;
 		color: #ffffff;
 		font-family: pp_woodlandultralight;
 		margin-bottom: 70px;
-	}
-
-	.extra-padding {
-		padding-right: 15px;
 	}
