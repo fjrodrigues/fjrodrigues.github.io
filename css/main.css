@@ -58,11 +58,13 @@ header {
 	justify-content: center;
 	font-family: pp_woodlandultralight;
 	margin-top: 25px;
+	margin-left: 15px;
 	}
 
   .nav-home {
 	margin-left: 15px;
-	padding:0;
+	position: absolute;
+	z-index: 3;
   }
   .nav .ul {
 	display: inline-block;
