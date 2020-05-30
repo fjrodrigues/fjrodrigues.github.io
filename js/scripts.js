@@ -13,7 +13,7 @@ var pdfDoc = null,
     pageNum = 1,
     pageRendering = false,
     pageNumPending = null,
-    scale = 0.9,
+    scale = 1.0,
     canvas = document.getElementById('the-canvas'),
     ctx = canvas.getContext('2d');
 
@@ -88,8 +88,8 @@ function onNextPage() {
 document.getElementById('next').addEventListener('click', onNextPage);
 
 function goToPage() {
-	const pageNumber = parseInt(event.target.dataset.page);
-	renderPage(pageNumber);
+	pageNum = parseInt(event.target.dataset.page);
+	renderPage(pageNum);
 }
 /**
  * Asynchronously downloads PDF.
