@@ -184,3 +184,37 @@ font-family: pp_woodlandultralight;
 		margin-top: 30px;
 		margin-bottom: 30px;
 	}
+
+	.phase-image {
+		max-width: 70%;
+		height: auto;
+	}
+	
+	.phase-title {
+		font-size: 30px;
+		color: #ffffff;
+		font-family: pp_woodlandultralight;
+		margin-bottom: 20px;
+	}
+
+	.phase-date {
+		font-size: 20px;
+		color: #ffffff;
+		font-family: pp_woodlandultralight;
+		margin-top: 20px;
+	}
+
+	.phase-item {
+		margin-left: 10px
+	}
+
+	.cls-1:hover {
+		fill: gray
+	}
+	.cls-1 {
+		fill: white
+	}
+
+	.active-timeline {
+		fill: gray
+	}

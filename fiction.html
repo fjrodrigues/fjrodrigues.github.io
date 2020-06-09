@@ -66,13 +66,19 @@
 				<div class="col-md-1">
 				</div>
 				<div class="col-md-10">
-					<img src="images/Timeline_Croped.jpg" class="img-fluid map" alt="Responsive image" usemap="#interactiveMap" width="1157" height="271">
-					<map name="interactiveMap">
-						<area shape="rect" data-target="pair-1" coords="22,150,42,170" href="#blank" onclick="toggleTimeBlock()" data-maphilight='{"strokeColor":"000000","strokeWidth":3,"fillColor":"000000","fillOpacity":0.2}'>
-						<area shape="rect" data-target="pair-2" coords="400,150,420,170" href="#blank" onclick="toggleTimeBlock()" data-maphilight='{"strokeColor":"000000","strokeWidth":3,"fillColor":"000000","fillOpacity":0.2}'>
-						<area shape="rect" data-target="pair-3" coords="646,150,666,170" href="#blank" onclick="toggleTimeBlock()" data-maphilight='{"strokeColor":"000000","strokeWidth":3,"fillColor":"000000","fillOpacity":0.2}'>
-						<area shape="rect" data-target="pair-4" coords="902,150,922,170" href="#blank" onclick="toggleTimeBlock()" data-maphilight='{"strokeColor":"000000","strokeWidth":3,"fillColor":"000000","fillOpacity":0.2}'>
-					</map>
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4231 991.5">
+						<g id="Layer_2" data-name="Layer 2">
+							<rect y="0.5" width="4231" height="991"/>
+						</g>
+						<g id="Layer_3" data-name="Layer 3">
+							<image width="4231" height="991" xlink:href="images/Timeline_Croped.jpg"/></g>
+						<g id="Layer_4" data-name="Layer 4">
+							<a href="javascript:void(0)"> <rect class="cls-1" x="85.5" y="547.5" width="66" height="72" data-target="pair-1" id="timeline-item-1" onclick="toggleVisibility()"/> </a>
+							<a href="javascript:void(0)"> <rect class="cls-1" x="1465.5" y="545.5" width="66" height="72" data-target="pair-2" id="timeline-item-2" onclick="toggleVisibility()"/> </a>
+							<a href="javascript:void(0)"> <rect class="cls-1" x="2364.5" y="547.5" width="66" height="72" data-target="pair-3" id="timeline-item-4" onclick="toggleVisibility()"/> </a>
+							<a href="javascript:void(0)"> <rect class="cls-1" x="3300.5" y="545.5" width="66" height="72" data-target="pair-4" id="timeline-item-3" onclick="toggleVisibility()"/> </a>
+						</g>
+					</svg>
 				</div>
 				<div class="col-md-1">
 				</div>
@@ -230,22 +236,25 @@
 		<script src="js/jquery.rwdImageMaps.min.js"></script>
 		<script src="js/jquery.maphilight.min.js"></script>
 		<script>
-			$(document).ready(function(e) {
-				$('img[usemap]').rwdImageMaps();
-				$('.map').maphilight();
-			});
-			$('area').on('click', function() {
-				console.log($(this).attr('alt') + ' clicked');
-			});
-			/*$('area').mouseover(function() {
-				alert($(this).attr('coords'));
-			}).mouseout(function(){
-				alert('Mouseout....');      
-			});*/
-
-			function toggleTimeBlock() {
-				console.log('you called?');
-				const targetClassIdentifier = event.target.dataset.target
+			var activeItemTimeline;
+			function toggleVisibility() {
+				let target = event.target;
+				if(!this.activeItemTimeline || this.activeItemTimeline == target.id)
+				{
+					target.classList.toggle("active-timeline");
+					this.activeItemTimeline = undefined;
+				}
+				else
+				{
+					var element = document.getElementById(this.activeItemTimeline);
+					element.classList.remove("active-timeline");
+					target.classList.toggle("active-timeline");
+				}
+				this.activeItemTimeline = target.id;
+				toggleTimeBlock(target.dataset.target);
+			}
+			function toggleTimeBlock( target ) {
+				const targetClassIdentifier = target;
 				let timelineBlockElements = document.getElementsByClassName('timeline-block');
 				for(let j=0; j<timelineBlockElements.length; j++) {
 					if(timelineBlockElements[j].classList.contains(targetClassIdentifier))
@@ -264,7 +273,7 @@
 			}
 
 			function scrollToSection(){
-				$('html, body').animate({ scrollTop: $('#video_section').offset().top}, 800, 'linear');
+				$('html, body').stop(true, false).animate({ scrollTop: $('#video_section').offset().top}, 800);
 			}
 
 			function pauseSelfVideo( target ) {
@@ -282,3 +291,4 @@
 			}
 		</script>
 	</body>
+</html>
