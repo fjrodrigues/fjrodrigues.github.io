@@ -49,32 +49,32 @@
 			</div>
 			<div class="row image-row text-center">
 				<div class="col-md-3">
-					<p class="phase-title">FIRST PHASE</p>
-					<a href="javascript:void(0)" onclick="toggleTimeBlock()">
+					<p class="phase-title phase-pair-1">FIRST PHASE</p>
+					<a href="javascript:void(0)" onclick="toggleActive()">
 						<img src="images/Phase 1.png" data-target="pair-1"  class="phase-image">
 					</a>
-					<p class="phase-date">JUNE 1-14</p>
+					<p class="phase-date phase-pair-1">JUNE 1-14</p>
 				</div>
 				<div class="col-md-3">
-					<p class="phase-title">SECOND PHASE</p>
-					<a href="javascript:void(0)" onclick="toggleTimeBlock()">
+					<p class="phase-title phase-pair-2">SECOND PHASE</p>
+					<a href="javascript:void(0)" onclick="toggleActive()">
 						<img src="images/Phase 2.png" data-target="pair-2" class="phase-image">
 					</a>
-					<p class="phase-date"> JUNE 15-24</p>
+					<p class="phase-date phase-pair-2"> JUNE 15-24</p>
 				</div>
 				<div class="col-md-3">
-					<p class="phase-title">THIRD PHASE</p>
-					<a href="javascript:void(0)" onclick="toggleTimeBlock()">
+					<p class="phase-title phase-pair-3">THIRD PHASE</p>
+					<a href="javascript:void(0)" onclick="toggleActive()">
 						<img src="images/Phase 3.png" data-target="pair-3" class="phase-image">
 					</a>
-					<p class="phase-date">JUNE 25-30</p>
+					<p class="phase-date phase-pair-3">JUNE 25-30</p>
 				</div>
 				<div class="col-md-3">
-					<p class="phase-title">FOURTH PHASE</p>
-					<a href="javascript:void(0)" onclick="toggleTimeBlock()">
+					<p class="phase-title phase-pair-4">FOURTH PHASE</p>
+					<a href="javascript:void(0)" onclick="toggleActive()">
 						<img src="images/Phase 4.png" data-target="pair-4" class="phase-image">
 					</a>
-					<p class="phase-date">JULY 1-?</p>
+					<p class="phase-date phase-pair-4">JULY 1-?</p>
 				</div>
 			</div>
 			<section id = "video_section">
@@ -190,8 +190,27 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script>
-			function toggleTimeBlock() {
-				const targetClassIdentifier = event.target.dataset.target
+			var activeItem;
+			function toggleActive() {
+				const eventSource = event.target.dataset.target;
+				let newActiveItem = "phase-" + eventSource;
+				if(!this.activeItem || this.activeItem == newActiveItem)
+				{
+					var elements = Array.from(document.getElementsByClassName(newActiveItem));
+					elements.forEach(element => element.classList.toggle("active-item"));
+				}
+				else
+				{
+					var elements = Array.from(document.getElementsByClassName(this.activeItem));
+					elements.forEach(element => element.classList.remove("active-item"));
+					var newElements = Array.from(document.getElementsByClassName(newActiveItem));
+					newElements.forEach(element => element.classList.toggle("active-item"));
+				}
+				this.activeItem = newActiveItem;
+				toggleFictionBlock(eventSource);
+			}
+			function toggleFictionBlock(target) {
+				const targetClassIdentifier = target
 				let timelineBlockElements = document.getElementsByClassName('timeline-block');
 				for(let j=0; j<timelineBlockElements.length; j++) {
 					if(timelineBlockElements[j].classList.contains(targetClassIdentifier))
