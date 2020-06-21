@@ -218,3 +218,7 @@ font-family: pp_woodlandultralight;
 	.active-timeline {
 		fill: gray
 	}
+
+	.active-item {
+		color: gray
+	}

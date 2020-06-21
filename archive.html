@@ -189,62 +189,6 @@
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script>
-			var activeItem;
-			function toggleActive() {
-				const eventSource = event.target.dataset.target;
-				let newActiveItem = "phase-" + eventSource;
-				if(!this.activeItem || this.activeItem == newActiveItem)
-				{
-					var elements = Array.from(document.getElementsByClassName(newActiveItem));
-					elements.forEach(element => element.classList.toggle("active-item"));
-				}
-				else
-				{
-					var elements = Array.from(document.getElementsByClassName(this.activeItem));
-					elements.forEach(element => element.classList.remove("active-item"));
-					var newElements = Array.from(document.getElementsByClassName(newActiveItem));
-					newElements.forEach(element => element.classList.toggle("active-item"));
-				}
-				this.activeItem = newActiveItem;
-				toggleFictionBlock(eventSource);
-			}
-			function toggleFictionBlock(target) {
-				const targetClassIdentifier = target
-				let timelineBlockElements = document.getElementsByClassName('timeline-block');
-				for(let j=0; j<timelineBlockElements.length; j++) {
-					if(timelineBlockElements[j].classList.contains(targetClassIdentifier))
-					{
-						timelineBlockElements[j].classList.toggle('d-none');
-						scrollToSection();
-						if(timelineBlockElements[j].classList.contains('d-none')) {
-							pauseSelfVideo(targetClassIdentifier);
-						}
-					}
-					else if(!timelineBlockElements[j].classList.contains('d-none')) {
-						timelineBlockElements[j].classList.add('d-none');
-						pauseOthers(targetClassIdentifier);
-					}
-				}
-			}
-
-			function scrollToSection(){
-				$('html, body').stop(true, false).animate({ scrollTop: $('#video_section').offset().top}, 800);
-			}
-
-			function pauseSelfVideo( target ) {
-				videoPlayerId = 'video_' + target;
-				document.getElementById(videoPlayerId).pause();
-			}
-
-			function pauseOthers( excludePlayer) {
-				let listOfPlayersIds = ["video_pair-1", "video_pair-2", "video_pair-3", "video_pair-4"];
-				for(element in listOfPlayersIds){
-					if (listOfPlayersIds[element] != excludePlayer){
-						document.getElementById(listOfPlayersIds[element]).pause();
-					}
-				}
-			}
-		</script>
+		<script src="js/scripts.js"></script>
 	</body>
 </html>
