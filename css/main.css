@@ -186,7 +186,7 @@ font-family: pp_woodlandultralight;
 	}
 
 	.phase-image {
-		max-width: 70%;
+		max-width: 65%;
 		height: auto;
 	}
 	
@@ -194,14 +194,14 @@ font-family: pp_woodlandultralight;
 		font-size: 30px;
 		color: #ffffff;
 		font-family: pp_woodlandultralight;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 	}
 
 	.phase-date {
 		font-size: 20px;
 		color: #ffffff;
 		font-family: pp_woodlandultralight;
-		margin-top: 20px;
+		margin-top: 40px;
 	}
 
 	.phase-item {
@@ -222,3 +222,16 @@ font-family: pp_woodlandultralight;
 	.active-item {
 		color: gray
 	}
+
+	.phase-row {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	/*
+	.first-phase-col {
+		margin-left: 15px;
+	}
+
+	.last-phase-col {
+		margin-right: 15px;
+	} */

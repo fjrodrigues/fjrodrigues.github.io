@@ -30,13 +30,13 @@
 		<div class="container-fluid h-100">
 			<div class="row align-items-center h-100">
 				<div class="col-md-1 text-center">
-					<img id="prev" class="pointer-effect float-right" src="images/Seta esq.svg" width="40px" height="40px" >
+					<img class="pointer-effect float-right" src="images/Seta esq.svg" width="40px" height="40px" onclick=previousImage()>
 				</div>
 				<div class="col-md-10 text-center">
-					<canvas id="the-canvas"></canvas>
+					<img src="images/manual/AnachronicStamp_page-0001.jpg" id="manual" class="manual-canvas" width="auto" height="708px">
 				</div>
 				<div class="col-md-1 text-center">
-					<img id="next" class="pointer-effect float-left" src="images/Seta dta.svg" width="40px" height="40px" >
+					<img class="pointer-effect float-left" src="images/Seta dta.svg" width="40px" height="40px" onclick=nextImage()>
 				</div>
 			</div>
 			<div class="row last-row">
@@ -60,6 +60,5 @@
 		</div>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
