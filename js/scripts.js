@@ -1,12 +1,15 @@
 
 const baseImageSource = 'images/manual/AnachronicStamp_page-';
 const fileExtension = '.jpg';
+const maxPageNumber = 57;
 var currentPage = 1;
 
 function nextImage() {
-	this.currentPage++;
-	const formatedNumber = formatNumber(this.currentPage);
-	setPageNumber(formatedNumber);
+	if(this.currentPage < maxPageNumber){
+		this.currentPage++;
+		const formatedNumber = formatNumber(this.currentPage);
+		setPageNumber(formatedNumber);
+	}
 }
 
 function previousImage(){
