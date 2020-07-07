@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<title>ANACHRONIC stamp</title>
-
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+</head>
 
-	</head>
-	<body class="backplane">
-		<a class="nav-link nav-home float-left" href="index.html"><img src="images/Cruz.svg" width="15px" height="15px"></a> 
-		<ul class="nav nav-marg-b">
-			<li class="nav-item">
-				<a class="nav-link ext-nav-link" href="about.html">ABOUT</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ext-nav-link" href="fiction.html">FICTION</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ext-nav-link currentLink" href="process.html">PROCESS</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link ext-nav-link" href="archive.html">ARCHIVE</a>
-			</li>
-		</ul>
-		<div class="container-fluid h-100">
-			<div class="row align-items-center h-100">
-				<div class="col-md-1 text-center">
-					<img class="pointer-effect float-right" src="images/Seta esq.svg" width="40px" height="40px" onclick=previousImage()>
-				</div>
-				<div class="col-md-10 text-center">
-					<img src="images/manual/AnachronicStamp_page-0001.jpg" id="manual" class="manual-canvas" width="auto" height="708px">
-				</div>
-				<div class="col-md-1 text-center">
-					<img class="pointer-effect float-left" src="images/Seta dta.svg" width="40px" height="40px" onclick=nextImage()>
-				</div>
+<body class="backplane">
+	<a class="nav-link nav-home float-left" href="index.html">
+		<img src="images/Cruz.svg" width="15px" height="15px"></a>
+	<ul class="nav nav-marg-b">
+		<li class="nav-item"> <a class="nav-link ext-nav-link" href="about.html">ABOUT</a></li>
+		<li class="nav-item"> <a class="nav-link ext-nav-link" href="fiction.html">FICTION</a></li>
+		<li class="nav-item"> <a class="nav-link ext-nav-link currentLink" href="process.html">PROCESS</a></li>
+		<li class="nav-item"> <a class="nav-link ext-nav-link" href="archive.html">ARCHIVE</a></li>
+	</ul>
+	<div class="container-fluid">
+		<div class="row manual-row text-center">
+			<div class="col-md-3"></div>
+			<div class="col-md-6 text-body text-center">
+				<p class="text-body"> The Production Manual is divided into four installments.
+				<p class="bloat-margin">The first one, <span class="fontwoodlandul">MONOLOGUE</span>, reveals the
+					character’s vision on his own path of
+					discovering and unconsciously destroying his own identity.</p>
+				<p class="bloat-margin">The second one, <span class="fontwoodlandul">ANALOGUE</span>, explores
+					another interpretation of the same timeline,
+					from
+					an outside view and is divided into four parts that coincide with the four moments of erasure of
+					his
+					memories.</p>
+				<p class="bloat-margin">The third one, <span class="fontwoodlandul">TRAVELOGUE</span>, is focused on
+					the transformation of the fiction into
+					public online display, explaining the four parts of the temporary experience.</p>
+				<p class="bloat-margin">The fourth one, <span class="fontwoodlandul">EPILOGUE</span>, concludes the
+					project with a reflection on the
+					questions brought by this fiction and depicts our vision on the entire process of design
+					creation in times of a global pandemic.</p>
+				</p>
 			</div>
-			<div class="row last-row">
-				<div class="col-md-3">
-				</div>
-				<div class="col-md-6 text-body text-center">
-					<p class="sub-title">
-						STRUCTURE
-					</p>
-					<p class="text-body">
-						The Production Manual is divided into four installments.
-						<p class="bloat-margin">The first one, <span class="pointer-effect fontwoodlandul" data-page="3" onclick="goToPage()">MONOLOGUE</span>, reveals the character’s vision on his own path of discovering and unconsciously destroying his own identity.</p>
-						<p class="bloat-margin">The second one, <span class="pointer-effect fontwoodlandul" data-page="21" onclick="goToPage()">ANALOGUE</span>, explores another interpretation of the same timeline, from an outside view and is divided into four parts that coincide with the four moments of erasure of his memories.</p>
-						<p class="bloat-margin">The third one, <span class="pointer-effect fontwoodlandul" data-page="36" onclick="goToPage()">TRAVELOGUE</span>, is focused on the transformation of the fiction into public online experience, in times of a global pandemic.</p>
-						<p class="bloat-margin">The fourth one, <span class="pointer-effect fontwoodlandul" data-page="57" onclick="goToPage()">EPILOGUE</span>, concludes the project with our vision on the entire process and the importance of all the questions and answers brought by this fiction.</p>
-					</p>
-				</div>
-				<div class="col-md-3">
-				</div>
-			</div>
+			<div class="col-md-3"></div>
 		</div>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+		<div class="row text-center">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="row text-center m-bottom">
+					<div class="col-md-3 no-padding">
+						<p><span class="pointer-effect fontwoodlandul" style="color: white;" data-page="3"
+								onclick="goToPage()">MONOLOGUE</span></p>
+					</div>
+					<div class="col-md-3 no-padding">
+						<p> <span class="pointer-effect fontwoodlandul" style="color: white;" data-page="21"
+								onclick="goToPage()">ANALOGUE</span></p>
+					</div>
+					<div class="col-md-3 no-padding">
+						<p><span class="pointer-effect fontwoodlandul" style="color: white;" data-page="36"
+								onclick="goToPage()">TRAVELOGUE</span></p>
+					</div>
+					<div class="col-md-3 no-padding">
+						<p><span class="pointer-effect fontwoodlandul" style="color: white;" data-page="57"
+								onclick="goToPage()">EPILOGUE</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row last-row align-items-center h-100">
+			<div class="col-md-1 text-center"> <img class="pointer-effect float-right" src="images/Seta esq.svg"
+					width="40px" height="40px" onclick=previousImage()></div>
+			<div class="col-md-10 text-center"> <img src="images/manual/AnachronicStamp_page-0001.jpg" id="manual"
+					class="manual-canvas" width="auto" height="708px"></div>
+			<div class="col-md-1 text-center"> <img class="pointer-effect float-left" src="images/Seta dta.svg"
+					width="40px" height="40px" onclick=nextImage()></div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>
